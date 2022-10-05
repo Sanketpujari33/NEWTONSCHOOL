@@ -1,0 +1,44 @@
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Subject details</title>
+  </head>
+  <body>
+    <form action="verification.html" method="post" enctype="text/plain" autocomplete="on">
+      <h1>Register</h1>
+      <p>Maintaning Records</p>
+      <hr>
+      <fieldset>
+<legend>Personal Data</legend>
+     <label for = "fname">First Name</label>
+    <input type ="text" placeholder = " Enter first name" name ="fname" id ="fname" required><br>
+      <label for ="lname">Last Name</label>
+     <input type = "text" placeholder="Enter Last Name" name = "lname" id ="lname"  required><br>
+     <label for ="cars">chosse car:</label><br>
+     <select name = "car" id ="cars">
+       <optgroup label = "french car">
+         <option value ="volve">volvo</option>
+         <option value ="mercedes">mercedes 2</option>
+         <option value ="BMW">BMW</option>
+         <option value ="Audi">Audi</option>
+       </optgroup>
+       <optgroup label = "german car">
+        <option value ="Audi">Audi 2</option>
+        <option value ="BMW">BMW 23</option>
+        <option value ="volvo">volvo 28</option>
+        <option value ="mercedes">mercedes 34</option>
+      </optgroup>
+     </select><br>
+     <label for ="summary">summary</label><br>
+     <textarea id="summary" name ="summary" row="5" column="60">please write something</textarea>
+     <br>
+     <input type = "submit" value ="Apply">
+    </fieldset>
+      <br>
+      <br>
+      
+    </form>
+  </body>
+</html>

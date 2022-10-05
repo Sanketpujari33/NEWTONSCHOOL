@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Introduction to JS</title>
+    <script>
+        function displayMessage() {
+            var message = "Hey Buddy, I am JS";
+            console.log(message);
+            document.getElementById("mySpan").innerHTML = message;
+        }
+        function displayMessages(){
+            var message ="Hi!";
+            console.log(message)
+            document.getElementById("s").innerHTML= message;
+        }
+    </script>
+</head>
+
+<body>
+    <span id="mySpan"></span>
+    <button onclick="displayMessage()">Display Message</button>
+    <br>
+    <hr>
+    <span id="s"></span>
+    <button onclick="displayMessages()">Display Message</button>
+</body>
+
+</html>

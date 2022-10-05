@@ -1,0 +1,16 @@
+{
+  "name": "september_21",
+  "version": "1.0.0",
+  "description": "this is my 5 Node class",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sanket Pujari",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}

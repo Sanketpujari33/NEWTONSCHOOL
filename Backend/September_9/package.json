@@ -1,0 +1,12 @@
+{
+  "name": "september_9",
+  "version": "1.0.0",
+  "description": "This is my first Node class",
+  "main": "index.js",
+   "scripts": {
+    "start":"node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sanket pujari",
+  "license": "ISC"
+}

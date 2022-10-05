@@ -1,0 +1,47 @@
+package DSA.Playground.Hashing;
+
+public class Hashing {
+
+  public static void conqure(int arr[], int l, int mid, int r) {
+    int marge[] = new int[l - r + 1];
+    int idx1 = l;
+    int idx2 = mid + 1;
+    int x = 0;
+    while (idx1 <= mid && idx2 <= r) {
+      if (arr[idx1] <= arr[idx2]) {
+        marge[x++] = arr[idx1++];
+      } else {
+        marge[x++] = arr[idx2++];
+      }
+    }
+    while (idx1 <= mid) {
+      marge[x++] = arr[idx1++];
+    }
+    while (idx2 <= r) {
+      marge[x++] = arr[idx2++];
+    }
+    for (int i = 0, j = l; i < marge.length; i++, j++) {
+      arr[j] = marge[i];
+    }
+  }
+
+  public static void divid(int arr[], int l, int r) {
+    if (l >= r) {
+      return;
+    }
+    int mid = l + (r - l) / 2;
+    divid(arr, l, mid);
+    divid(arr, mid + 1, r);
+    conqure(arr, l, mid, r);
+  }
+
+  public static void main(String[] args) {
+    int arr[] = { 10, 34, 5, 10, 3, 5, 10, 56, 66, 42, 8 };
+    int size = arr.length;
+    divid(arr, 0, size - 1);
+    for (int i = 0; i < size; i++) {
+      System.out.print(arr[i] + " ");
+    }
+    System.out.println();
+  }
+}
