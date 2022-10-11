@@ -1,9 +1,0 @@
-npm init -y
-
-npm install express --save
-
-npm install i -g nodemon
-
-npm install ejs --save
-
-npm install mongoose --save

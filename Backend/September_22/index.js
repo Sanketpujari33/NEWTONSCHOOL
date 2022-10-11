@@ -1,16 +1,20 @@
 const express = require('express');
-
 const app = express();
 
-const mongooose = require('mongoose');
+//-------------------------------------------------------------------------------------------------------------------
 
+const mongooose = require('mongoose');
 const url = "mongodb://localhost:27017/cortana_db";
+
+//-----------------------------------------------------------------------------------------------------------------------
 
 mongooose.connect(url).then((value) => {
     console.log('Sucessfully Connected to DB');
 }).catch((e) => {
     console.log('Error is -', e);
 });
+
+//------------------------------------------------------------------------------------------------------------------------
 
 const Schema = mongooose.Schema;
 
@@ -23,7 +27,10 @@ const cs = new Schema({
         type: String,
         require: true
     }
+
 });
+
+//----------------------------------------------------------------------------------------------------------------------
 
 const userDetails = mongooose.model("User_details", cs);
 userDetails.create({
@@ -37,7 +44,11 @@ userDetails.create({
     
 })
 
+//------------------------------------------------------------------------------------------------------------------------
+
 app.listen(8080, (err) => {
     if (err) console.log('Error is', err);
     console.log('Server is up');
 });
+
+//--------------------------------------------------------------------------------------------------------------------

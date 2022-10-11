@@ -1,18 +1,61 @@
-// use of express
+
+// GET------Read A File ---R
+// POST-----Create A File- C
+// PUT------Update A File- U
+//DELETE----Delete A File- D
+// WORK LIKE CURD
+//-----------------------------------------------------------------------------------------------------------
+
+// What Is Server -Which is Similar(Replicable) to Your Divice Like Laptop, DeskTop, Etc, 
+// but accses the divece is Acspose to you
+// it is http request
+
+// const http = require("http");
+// const server = http.createServer((req, res) => {
+//   console.log("Got the result");
+//   res.end("Hear is your response");
+// });
+// server.listen(8080, "127.0.0.1", () => {
+//   console.log("My server is live");
+// });
+
+//--------------------------------------------------------------------------------------------------------------------
+
+
+// using of express
+// const http = require('http');
+// const express = require('express');
+// const app = express()
+
+//Status Code:- 200-Everey Thing Is Good
+            //  400-Somthing Wrong with Logic OR Code
+            //  500- SomeThing Wrong with Server
+
+
+
+// app.get('/', (req, res) => {
+//     console.log("This is get");
+
+//     res.status(200);
+//     res.json({
+//         massage: "This is my Json",
+//         data: 67,
+//         isSccessful: true
+//     });
+// });
+
+// const server = http.createServer(app);
+
+// server.listen(8080, '127.0.0.1', () => {
+//     console.log('My Express server is live');
+// });
+
+
+//--------------------------------------------------------------------------------------------------------------------
+
 const http = require('http');
 const express = require('express');
 const app = express()
-
-app.get('/', (req, res) => {
-    console.log("This is get");
-
-    res.status(200);
-    res.json({
-        massage: "This is my Json",
-        data: 67,
-        isSccessful: true
-    });
-});
 app.get('/movie', (req, res) => {
     console.log('Movies API hit');
     res.status(200);
@@ -41,28 +84,17 @@ app.get('/movie', (req, res) => {
         Language: "English",
         Country: "USA",
         Awards: "Won 1 Oscar. Another 22 wins & 13 nominations.",
-        Poster:
-            "http://ia.media-imdb.com/images/M/MV5BMTQ0ODc4MDk4Nl5BMl5BanBnXkFtZTcwMTEzNzgzNA@@._V1_SX300.jpg",
+        Poster:"http://ia.media-imdb.com/images/M/MV5BMTQ0ODc4MDk4Nl5BMl5BanBnXkFtZTcwMTEzNzgzNA@@._V1_SX300.jpg",
         imdbRating: "8.1",
         imdbVotes: "183,131",
         imdbID: "tt0061722",
     });
 })
 const server = http.createServer(app);
-
 server.listen(8080, '127.0.0.1', () => {
     console.log('My Express server is live');
 });
 
 
-// it is http request
 
-// const http = require("http");
-// const server = http.createServer((req, res) => {
-//   console.log("Got the result");
-//   res.end("Hear is your response");
-// });
-// server.listen(8080, "127.0.0.1", () => {
-//   console.log("My server is live");
-// });
 

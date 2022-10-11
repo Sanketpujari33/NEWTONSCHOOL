@@ -1,5 +1,5 @@
 // const EventEmitter = require("events");
-// const eventEmitterObject = new EventEmitter();
+// const eventEmitterObject = new EventEmittlser();
 
 const {registerEvent, eventEmitterObject}=require('./eventRegistration');
 const {readFullFile , readFileInParts}=require("./streams");

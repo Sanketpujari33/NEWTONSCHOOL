@@ -17,5 +17,3 @@ function registerEvent(eventName){
 
 module.exports={registerEvent, eventEmitterObject};
 
-
-
