@@ -1,0 +1,45 @@
+//NODE JS
+npm init -y
+//EXPRESS
+npm install express --save
+
+npm install cookie-parser --save
+
+
+//Help develop node.js based aplications by automatically restarting 
+// the node application when file change in the directory are detected
+//goble use
+npm install i -g nodemon
+or
+//localy used  
+npm install --save-dev nodemon
+start server
+nodemon serever
+
+lodash use of localy  pakeges save in file
+
+npm i -g npm
+npm i --save lodash 
+
+
+npm install ejs --save
+
+//Mongodb
+mongod //Start a mongodb
+
+npm install mongoose --save
+
+//rate limit
+
+npm install express-rate-limit --save
+
+//genrete the token and secret password
+
+//npm install bcrypt --save
+
+//jwt token
+npm install jsonwebtoken --save
+
+//passport Authentication
+
+npm install passport passport-local passport-jwt jsonwebtoken --save
