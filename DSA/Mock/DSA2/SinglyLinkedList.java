@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA2;
+package DSA.Mock.DSA2;
 
 public class SinglyLinkedList {
 
@@ -152,15 +152,6 @@ public class SinglyLinkedList {
     return slwPr;
   }
 
-  public void display() {
-    ListNode current = head;
-    while (current != null) {
-      System.out.print(current.data + "->");
-      current = current.next;
-    }
-    System.out.println("NULL");
-  }
-
   public ListNode grtNthNodeFromEnd(int n) {
     if (head == null) {
       return null;
@@ -187,18 +178,21 @@ public class SinglyLinkedList {
     return minPtr;
   }
 
-  public void removeDuplicate() {
+  public ListNode removeDuplicate() {
+  ListNode duppli=null;
     if (head == null) {
-      return;
+      return head;
     }
     ListNode current = head;
     while (current != null && current.next != null) {
       if (current.data == current.next.data) {
+        duppli.next=current;
         current.next = current.next.next;
       } else {
         current = current.next;
       }
     }
+    return duppli;
   }
 
   public ListNode insertSortedLInkedList(int value) {
@@ -384,7 +378,7 @@ public class SinglyLinkedList {
     System.out.println(sli.containsLoop());
     System.out.println(sli.staringNodeLoop().data);
     sli.floydCycleDection();
-    sli.display();
+//    sli.display();
     sli.insertLast(1);
     sli.insertLast(3);
     sli.insertLast(5);
@@ -395,13 +389,13 @@ public class SinglyLinkedList {
     sli1.insertLast(4);
     sli1.insertLast(6);
     sli1.insertLast(8);
-    sli.display();
-    sli1.display();
+//    sli.display();
+//    sli1.display();
     SinglyLinkedList result = new SinglyLinkedList();
     result.head = margeLinkedList(sli.head, sli1.head);
-    result.display();
+//    result.display();
     SinglyLinkedList result2 = new SinglyLinkedList();
     result2.head = addSum(sli1.head, sli1.head);
-    result2.display();
+//    result2.display();
   }
 }

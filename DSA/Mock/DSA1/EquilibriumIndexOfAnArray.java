@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //Equilibrium index of an array is an index such that the sum of elements at lower indexes is equal to the
 // sum of elements at higher indexes. For example, in an array A:

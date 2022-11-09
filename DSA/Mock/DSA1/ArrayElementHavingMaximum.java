@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //Given an array arr[] of size N and an integer K, the task is to find an array element which contains the digit
 //        K maximum number of times.If more than one solutions exist, then print any one of them. Otherwise, print -1.

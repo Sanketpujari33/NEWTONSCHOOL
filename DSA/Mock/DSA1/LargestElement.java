@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //    22.Implement an algorithm, given an array with positive and duplicate elements,
 //    find the largest element in given array in O(n):

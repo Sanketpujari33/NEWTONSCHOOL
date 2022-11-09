@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //Given an array with all distinct elements, find the largest three elements.
 // Expected time complexity is O(n) and extra space is O(1).

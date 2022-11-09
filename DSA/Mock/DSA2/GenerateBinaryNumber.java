@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA2;
+package DSA.Mock.DSA2;
 
  /*Generate Binary numbers from 1 to n using a Queue.
          Example –

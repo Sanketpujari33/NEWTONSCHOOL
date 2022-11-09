@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 // "static void main" must be defined in a public class.
 /*

@@ -1,10 +1,10 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 public class SumOfEvenAndOldIndex {
 
   public static void sumOfEvenOdd(int arr[], int size) {
     int mOddIndexSum = 0, mEvenIndexSum = 0;
-    int oddtotal = 0;
+    // int oddtotal = 0;
     for (int i = 0; i < size; i++) {
       if (i % 2 == 0) {
         mEvenIndexSum += arr[i];
@@ -18,8 +18,8 @@ public class SumOfEvenAndOldIndex {
   public static void mOddEvenIndex(int array[]) {
     int mOddIndexSum = 0, mEvenIndexSum = 0;
     int oddtotal = 0;
-    int size = array.length;
-    int[] oddarry = new int[size];
+    // int size = array.length;
+    // int[] oddarry = new int[size];
     for (int i = 0; i < array.length; i++) {
       if (i % 2 == 0) {
         mEvenIndexSum = mEvenIndexSum + array[i];

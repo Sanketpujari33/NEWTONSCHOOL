@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //6-Rearrange Positive and Negative Elements at Alternate Positions in an Array In O(1) Extra Space
 //        Objective: Given an array arrA[] which has negative and positive elements, rearrange the array in such a manner that positive and negative elements occupy the alternate positions and if there are extra positive or negative elements are left then append it to the end.
@@ -19,14 +19,11 @@ package DSA.DSAMock.DSA1;
 //      |                          |
 //     outofplace      -->      outofplace
 //
-/* int arr[n] = {-5, 3, 4, 5, -6,
-                         -2, 8, 9, -1, -4};
-        int arr[] = {-5, -3, -4, -5, -6,
-                     2 , 8, 9, 1 , 4};
-        int arr[] = {5, 3, 4, 2, 1,
-                     -2 , -8, -9, -1 , -4};
-        int arr[] = {-5, 3, -4, -7,
-                     -1, -2 , -8, -9, 1 , -4};*/
+/* int arr[n] = {-5, 3, 4, 5, -6,-2, 8, 9, -1, -4};
+        int arr[] = {-5, -3, -4, -5, -6, 2 , 8, 9, 1 , 4};
+        int arr[] = {5, 3, 4, 2, 1, -2 , -8, -9, -1 , -4};
+        int arr[] = {-5, 3, -4, -7, -1, -2 , -8, -9, 1 , -4};*/
+        
 public class RearrangeArrayInAlterPositiveNegative {
 
   void rightrotate(int arr[], int n, int outofplace, int cur) {

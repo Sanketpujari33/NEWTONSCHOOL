@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //Sort an Array which contain 1 to N values in O(N) using Cycle Sort
 //Given an array arr[] of elements from 1 to N, the task is to sort the given array in O(N) time.

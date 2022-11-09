@@ -5,6 +5,41 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Patterns",
+            "request": "launch",
+            "mainClass": "Patterns",
+            "projectName": "NewtonSchoole_cc15fe74"
+        },
+        {
+            "type": "java",
+            "name": "Launch BubbleSort",
+            "request": "launch",
+            "mainClass": "BubbleSort",
+            "projectName": "NewtonSchoole_cc15fe74"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution",
+            "request": "launch",
+            "mainClass": "Mock.java.Solution",
+            "projectName": "NewtonSchoole_cc15fe74"
+        },
+        {
+            "type": "java",
+            "name": "Launch combinationSum",
+            "request": "launch",
+            "mainClass": "DSA.Mock.DSA1.combinationSum",
+            "projectName": "NewtonSchoole_cc15fe74"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayElementHavingMaximum",
+            "request": "launch",
+            "mainClass": "DSA.Mock.DSA1.ArrayElementHavingMaximum",
+            "projectName": "NewtonSchoole_cc15fe74"
+        },
+        {
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}"
             ],

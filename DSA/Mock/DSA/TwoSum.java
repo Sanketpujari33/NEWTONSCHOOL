@@ -1,8 +1,6 @@
-package DSA.DSAMock.DSA;
+package DSA.Mock.DSA;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+
 
 //Sum of Two
 //        Time Limit: 2 sec

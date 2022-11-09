@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //Given a rotated array and target, return the index of target in array and time complexity Should be O(log(n))
 

@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //Given an array, write functions to find the minimum and maximum elements in it.
 public class FindTheMinimum {

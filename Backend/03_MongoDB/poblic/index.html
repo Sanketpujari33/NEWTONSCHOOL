@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Signup Form</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+  <style>
+    
+.login_div {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  padding: 10px;
+}
+.row.submit {
+  text-align: right;
+}
+  </style>
+</head>
+
+<body>
+  <div class="login_div">
+    <form  class="login_form">
+      <div class="row">
+        <label>Name:
+        <input type="text" name="Name" id="name">
+      </label>
+      </div>
+      <div class="row">
+        <label>Email:
+        <input type="text" name="email" id="email" >
+      </label>
+      </div>
+      <div class="row">
+        <label> Password:
+        <input type="password" name="password" id="pass" >
+      </label>
+      </div>
+      <div class="row submit">
+      <input class="btn btn-default"  id="sign" type="submit" value="Signup">
+      </div>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+
+</script>
+</body>
+

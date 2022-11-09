@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA2;
+package DSA.Mock.DSA2;
 import java.util.Stack;
 
 //Given an array of Integer for each element int the array,find its next greater element in the array.

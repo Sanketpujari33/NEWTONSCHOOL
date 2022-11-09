@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA2;
+package DSA.Mock.DSA2;
 
 public class IsPalindrome {
 

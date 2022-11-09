@@ -1,0 +1,72 @@
+//NODE JS
+npm init -y
+//EXPRESS
+
+npm install ejs --save
+
+npm install cookie-parser --save
+
+
+//Help develop node.js based aplications by automatically restarting 
+// the node application when file change in the directory are detected
+//goble use
+npm install i -g nodemon
+or
+//localy used  
+npm install --save-dev nodemon
+start server
+nodemon serever
+
+lodash use of localy  pakeges save in file
+
+npm i -g npm
+npm i --save lodash 
+
+
+
+//Mongodb
+mongod //Start a mongodb
+
+npm install mongoose --save
+
+
+//A simple module to validate an e-mail address
+npm i email-validator
+
+//rate limit
+
+npm install express-rate-limit --save
+
+//genrete the token and secret password
+ //npm i bcrypt
+npm install bcrypt --save
+
+npm i crypto
+
+
+//jwt token
+npm install jsonwebtoken --save
+
+//passport Authentication
+
+npm install passport passport-local passport-jwt jsonwebtoken --save
+
+
+for Payment server
+npm install --save stripe
+npm install --save @stripe/react-stripe-js @stripe/stripe-js
+
+Publishable key
+pk_test_51LuhIiSDdFqrK5OflH5CnyDEIEaUGEmq1GWrPghLgWT0w3gDIu1SLBijIP3aAoscx6BHOi2zdK2AfP3yPjDpu9oB0032J4EH1G
+
+Secret key
+sk_test_51LuhIiSDdFqrK5OfzLvS9BHeYBnIoVvHnUTRnfs9W55TbDDbxAkMbKxKem4o02GdSS1YGmGjGXcf1eFcFh7sYs9J00AXqq6JFW
+
+
+//multer for fileupload
+
+npm install multer
+
+
+Nodemailer is a module for Node.js applications to allow easy as cake email sending.
+npm install nodemailer

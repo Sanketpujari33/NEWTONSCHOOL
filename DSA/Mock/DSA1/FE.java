@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //How to find the frequency of elements in an array
 //Write a code to print the frequency of each element in a array in O(n) time complexity and in same order.

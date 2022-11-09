@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //Sort all even numbers in ascending order and then sort all odd numbers in descending order
 //        Given an array of integers (both odd and even), sort them in such a way that the first part of the array

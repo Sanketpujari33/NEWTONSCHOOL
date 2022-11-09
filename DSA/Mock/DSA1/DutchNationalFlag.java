@@ -1,7 +1,5 @@
-package DSA.DSAMock.DSA1;
-
+package DSA.Mock.DSA1;
 public class DutchNationalFlag {
-
   public static void sort0s1s2s(int arr[]) {
     int j = 0;
     int k = arr.length - 1;
@@ -55,7 +53,6 @@ public class DutchNationalFlag {
       2,
       0,
     };
-    int size = arr.length;
     sort0s1s2s(arr);
     for (int i : arr) {
       System.out.print(i + " ");

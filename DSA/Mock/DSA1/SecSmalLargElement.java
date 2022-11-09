@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 /*Java Program to find the second largest and second smallest elements in the array without using Functions*/
 

@@ -1,3 +1,3 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 public class NumberisPalindrome {}

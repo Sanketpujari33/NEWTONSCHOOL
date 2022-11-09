@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //Approach:
 //The smallest positive integer is 1. First we will check if 1

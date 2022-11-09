@@ -1,4 +1,5 @@
 const _ = require('lodash');
+// let db=require('./poblic/index.html');
 
 // let num=_.random(0,20);
 // console.log(num);
@@ -31,7 +32,20 @@ app.listen(3000);
 //DELETE:- To Delete Data From Database
 
 
-let users = {};
+let users = [
+    {
+        id: 1,
+        name: "Sanket",
+    },
+    {
+        id: 2,
+        name: "Shekhar",
+    },
+    {
+        id: 3,
+        name: "Vishal",
+    }]
+    ;
 
 // app.get('/users', (req,res)=>{
 //     console.log(req.query);
@@ -107,9 +121,27 @@ let users = {};
 //MOUNTING IN EXPRESS
 //Readable
 //Syntactcally
-const userRouter=express.Router();
-app.use('/user ')
-function postUser(req, res) {
+const userRouter = express.Router();
+app.use('/user', userRouter);
+const authRouter=express.Router();
+app.use("/auth",authRouter)
+
+userRouter
+    .route('/')
+    .get(getUser)
+    .post(postUser)
+    .patch(updateUser)
+    .delete(deleteUser)
+    userRouter.route('/:id').get(getUserById);
+//Singup API
+authRouter
+.route('/signup')
+.get(middleware1,getSignup,middleware2)
+.post(postSingup)
+
+
+
+function getUser(req, res) {
     res.send(users);
 }
 
@@ -132,15 +164,59 @@ function updateUser(req, res) {
 }
 
 
-function dleteUser(req, res) {
+function deleteUser(req, res) {
     users = {};
     res.status(204).json({
         massage: "Data has been deleted"
     })
 }
 
+function getUserById(req, res) {
+    console.log(req.params.id);
+    let paramId = req.params.id;
+    let obj = {};
+    for (let index = 0; index < users.length; index++) {
+        if (users[index]['id'] == paramId) {
+            obj = users[index];
+        }
+    }
+    res.json({ message: "req recevived", data: obj })
+}
+
+
+function middleware1(req, res, next){
+    console.log('middlewar1 encountered');
+    next();
+}
+function middleware2(req, res){
+    console.log('middlewar2 encountered');
+    // res.json({
+    //     massage:"Midddleware 2 ended req/res cycle"
+    // })
+    // next();
+    console.log("Midddleware 2 ended req/res cycle");
+    
+    res.sendFile('/poblic/index.html',{root:__dirname})
+}
+
+function getSignup(req,res,next){
+    // res.sendFile('/poblic/index.html',{root:__dirname})
+    next();
+}
+function postSingup(req,res){
+    let obj=req.body;
+    console.log('Bakend',obj);
+    
+    console.log('backend',obj);
+    
+    res.json({
+        massage:"User Sign Up",
+        data:obj,
+    });
+}
 
 //--------------------------------------------------------------------------------------------------------------
+
 // app.get('/',(req, res)=>{
 //     res.sendFile('./views/index.html',{root:__dirname});
 // })
@@ -160,4 +236,33 @@ function dleteUser(req, res) {
 
 //     res.status(404).sendFile('./views/404.html',{root:__dirname});
 // })
+
+
+
+
+//---------------------------MIDDLEWARE FUNCTION--------------------------------------------
+
+// Types Of Middlwware function
+
+// app.use()-->globle middleware function  
+// allrequste are ran the globle midd fun 
+// respective type of requste or route 
+
+//app.methods->router path -->spcific path middleware functtion
+
+// benefiits
+//1 Error handaling-function (err, req, res)=>{}
+//404 pages return 
+//logger function 
+//is a cands of middlewere to parase jeson to js object
+// (app.use(express.json());---json- convert to js object -to )
+
+
+// How to use 
+//function(req, res, middleware(next())=>{
+    // process
+    // naxt()-> that time excute the next() call that time call a function middleware
+// })
+
+
 

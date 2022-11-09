@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA2;
+package DSA.Mock.DSA2;
 
 class node {
   int data;

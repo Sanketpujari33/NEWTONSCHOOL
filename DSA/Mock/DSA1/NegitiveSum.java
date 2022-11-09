@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //.print the sum of all the +ve integers from an array A={12,34,-20,44,-10,56,-2,86,12}.
 public class NegitiveSum {

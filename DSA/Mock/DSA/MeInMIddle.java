@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA;
+package DSA.Mock.DSA;
 
 //        Time Limit: 2 sec
 //        Memory Limit: 128000 kB

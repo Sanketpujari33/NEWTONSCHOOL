@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //Given an unsorted array of both positive and negative integer. The task is to place
 //all neative element at the end of array without changing the order of positive element and negative elements.

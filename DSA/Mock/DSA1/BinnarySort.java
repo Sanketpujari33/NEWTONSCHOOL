@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //Given a binary array A[] of size N. The task is to arrange the array in increasing order.
 //        Note: The binary array contains only 0  and 1.
@@ -18,7 +18,7 @@ package DSA.DSAMock.DSA1;
 //        increasing order, elements will be as
 //        0 0 1 1 1.
 
-//Sort a binary array using one traversal
+//        Sort a binary array using one traversal
 //        Difficulty Level : Easy
 //        Last Updated : 29 Apr, 2021
 //        Given a binary array, sort it using one traversal and no extra space.

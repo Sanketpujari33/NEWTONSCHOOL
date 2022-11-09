@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //        Sort an array of 0s, 1s and 2s
 //        1.Given an array A[] consisting 0s, 1s and 2s. The task is to write a function that sorts
@@ -84,7 +84,6 @@ public class countzot {
 
   public static void main(String[] args) {
     int arr[] = { 1, 2, 0, 1, 2, 0, 1, 0, 2, 0, 1, 2, 0, 2, 1, 2, 1, 0 };
-    int size = arr.length;
     sort(arr);
     for (int i : arr) {
       System.out.print(i + " ");

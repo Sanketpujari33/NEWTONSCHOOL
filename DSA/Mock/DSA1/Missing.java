@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA1;
+package DSA.Mock.DSA1;
 
 //You are given an unsorted array with both positive and negative elements.
 //        You have to find the smallest positive number missing from the array.

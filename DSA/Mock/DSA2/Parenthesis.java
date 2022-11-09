@@ -1,4 +1,4 @@
-package DSA.DSAMock.DSA2;
+package DSA.Mock.DSA2;
 import java.util.Stack;
 /* Given a string s, containing just the characters ‘(’, ‘)’, ‘[’, ‘]’, ‘{’ and ‘}’,
  determine if the input string is valid.
