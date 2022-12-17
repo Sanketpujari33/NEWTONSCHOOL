@@ -1,0 +1,30 @@
+Node JS REPL
+The REPL of Node is very useful in experimenting with Node.js code and to
+Debug JavaScript codes.
+
+REPL
+R-Read-Reads user input, porses the input into JavaScript data-structure and stores in memory
+
+E- Eval- Takes and evaluates the data structure.
+
+P- Print - Print the result.
+
+L- Loop- Loops the above command until the user presses ctrl-c twice.
+
+create a new Folder
+mkdir nodejs
+
+Open the created new Folder
+cd nodejs
+
+vs code Terminal
+
+node 
+
+type nul > index.js
+
+dir
+
+double Tab press
+
+fs
