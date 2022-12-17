@@ -1,0 +1,76 @@
+What is dataBase?
+A database is a software that stores data in organized manner
+2-Database is integreted collection of related information along with the details so that it
+ is available to several user for the different appliction.
+
+Installing package
+npm i mysql
+
+
+So it become easy to manage tha data
+RDBMS-PostgreSQL Oracle MySQL
+
+ What is mySql?
+Popular Database software use to handle data in relation manner
+
+how mySql Work?
+Command Line Client (SQL)-Query->DBServer->|    
+        |                                  |
+        |_______<______Result_______<______|
+
+GUI(Graphical user Interface)->Workmench, phpmyadmin, etc
+
+Installing MySQL in System?
+MySQL server Download
+
+Commands->DDL--> DATA DIFINATION LANGUAGE->(create, alter, cretetabel)
+          DML--> DATA MANUPLATION LANGUAGE->(Inser,Upadate) 
+          DCL--> DATA CONTROL LANGUAGE->(user,garant,Renolac)
+          DQL--> DATA QURAY LANGUAGE->(select, )
+          TCL--> TRANSACTION CONTROL LANGUAGE->(Transaction)set of comand
+
+ commond->Schema(like,comend)->ER Model->Project
+
+UPADET, CURETE, INSERT, SELSECT(imp)
+
+
+ JOIN->SUBQURAY->Transaction->Function->Strote Prossiger->Trigger
+
+ SQL-Postgres SQL->SWOFTWER
+    |_MYSQL->CLI-XAMP MYSQL PACHA
+
+
+ What is DataBase?
+Computer based Record Keeping Syatem
+
+Model Type
+Relational-RDBMS-TABLE
+Hierarchical
+Network
+
+Relational-RDBMS-TABLE
+purpose->Remove/Reduce Redundancy
+          consistant
+          DATA Security
+          Standed-Enforce
+
+Verious Level Implomention
+ Internal- internal 
+conseptual- requset and respons
+External Level
+
+Data Independence
+Physicaliy
+Logical
+
+Tramlogiy
+Tuples-Rows-->Table
+Attribute-like NO. Name, (Heading Of Tables) 
+Degree -> No Attribute-- No of Colume
+Cardinality--> No of Rows
+
+FK (Foran Key) Posts repsend a key
+PK (_primary key)user represnt key,  Unique , Not null tat become pk
+Ck (Condidate Key) Thos Attribute  are Condidate key
+
+ create Table
