@@ -12,7 +12,7 @@ npm install cookie-parser --save
 //goble use
 npm install i -g nodemon
 or
-//localy used  
+//locally used  
 npm install --save-dev nodemon
 start server
 nodemon serever
