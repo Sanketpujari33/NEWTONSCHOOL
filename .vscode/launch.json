@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AscendingOrder",
+            "request": "launch",
+            "mainClass": "DSA.Java.Array.OneDArray.AscendingOrder",
+            "projectName": "NEWTONSCHOOL_3a2095a3"
+        },
+        {
+            "type": "java",
             "name": "Launch Patterns",
             "request": "launch",
             "mainClass": "Patterns",
